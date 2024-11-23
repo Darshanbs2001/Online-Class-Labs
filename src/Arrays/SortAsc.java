@@ -39,8 +39,5 @@ public class SortAsc {
 		System.out.println("The array after sorting is: ");
 		sort(arr);//sort the given array elements
 		displayArray(arr);//display the sorted array elements 
-		
-		
-
 	}
 }

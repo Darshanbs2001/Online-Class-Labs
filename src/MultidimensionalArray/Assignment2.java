@@ -57,7 +57,5 @@ public class Assignment2 {
 		//add arr1 and arr2
 		Integer result[][]=addTwoMatrix(rowSize, colSize, arr1, arr2);
 		display(result);//display the sum of two array
-		
-
 	}
 }

@@ -32,31 +32,32 @@ public class SimpleCalculator {
 			b = in.nextInt();
 
 			System.out.println(
-					"select from the operation such \naddition(+) , \nsubtraction(-),\nmultiplication(*),\ndivision(/) ");
-			String op = in.next();//get the operation to be performed as string
+					"select from the operation such \naddition(+) "
+					+ " \nsubtraction(-) \nmultiplication(*) \ndivision(/) ");
+			String op = in.next();// get the operation to be performed as string
 			double result = 0;
-			switch (op.charAt(0)) {//check the character at 0th position using switch
+			switch (op.charAt(0)) {// check the character at 0th position using switch
 			case '+':
-				result = a + b;//addition of two numbers
+				result = a + b;// addition of two numbers
 				break;
 			case '-':
-				result = a - b;//subtraction of two numbers
+				result = a - b;// subtraction of two numbers
 				break;
 			case '*':
-				result = a * b;//multiplication of two numbers
+				result = a * b;// multiplication of two numbers
 				break;
 			case '/':
-				if (b == 0) {//if the denominator is zero then 
+				if (b == 0) {// if the denominator is zero then
 					throw new ZeroDivisionException("Number division by zero is not allowed");
-
 				}
-				result = a / b;//division of two numbers
+				result = a / b;// division of two numbers
 				break;
-			default://handle the unsupported symbols
+			default:// handle the unsupported symbols
 				throw new InvalidOperationException(
-						"Sorry unsupported operator entered please choose from the above list of operators");
+						"Sorry unsupported operator entered please choose from the above "
+						+ "list of operators");
 			}
-			//display the result 
+			// display the result
 			System.out.println("Result is : " + result);
 		} catch (InvalidOperationException e) {
 			System.out.println(e.getMessage());
