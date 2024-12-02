@@ -14,7 +14,6 @@ public class Assignment1 {
 				}
 			}
 		}
-
 	}
 
 //method to find the maximum of given array
